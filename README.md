@@ -1,37 +1,36 @@
-Demonstration program of services of the transport enterprise,
-based on the use of:
-- WebApp architecture technology, 
+# taxi-service
+
+**What this application is for and what it can do**
+Primitive demonstration program of services for the transport enterprise
+
+**Technologies used**
+Program based on the use of:
+- WebApp architecture technology
 - Java / Jackarta Server Pages
+- MySQL database system
 - Apache Tomcat - open source web server
 - Client Authentication process
 
-Login to the database can be done through "registration" and "login" - "password"
-by registration data (for simplification, You can enter any data)
-The program allows:
-1.1 View list of all drivers, delete (Display All Drivers)
-    and add new (Create new Driver)
-1.2 See a list of all cars removed (Display All Cars)
-    and add new (Create new Car)
-1.3 View list of all car manufacturers, remove (Display All Manufacturers)
-    and add new (Create new Manufacturer)
+**How to run a project**
+Before lunching the programm you need to install on you comp: 
+MySQL Workbench (DB for datas working) and Apache Tomcat (to lunch the programm)
+
+To lunch the project you need to copy program **taxi-service-1.0-SNAPSHOT.war** from this server
+and place it in /webapps Tomcat-programm`s on your comp.
+Lunch **/bin/startup.bat** Tomcat-programm/
+In brouser you can see authentication data to start of the program.
+To log in to the database you can use "registration" or "login" - "password"
+(For example, you can input user: bob, password: 1111)
+In registration data, for simplification, You can enter any username and password.
+After authentication or registration you can see panel for working with DB.
+So the program allows:
+1.1 View a list of all drivers, delete (Display All Drivers)
+    and add new ones (Create new Driver)
+1.2 View a list of all cars removed (Display All Cars)
+    and add new ones (Create new Car)
+1.3 View a list of all car manufacturers, remove (Display All Manufacturers)
+    and add new ones (Create new Manufacturer)
 1.4 Attach the driver to a specific car (Add Driver to Car)
 1.5 Show the authenticated driver a list of "his" cars (Get My Current Cars)
-Exit the program: logout
 
-
-Демонстраційна програма (далі "програма") обслуговування сервісів автотранспортного підприємства,
-що базується на використанні технології WebApp architecture, Java/Jackarta Server Pages 
-та open source web server Apache Tomcat з процесом Authentication клієнта
-
-Вхід в БД можна здійсніти через registration та login-password по цій реєстрації
-(для спрощення можна вводити будь-які дані).
-   Програма дозволяє:
-   1.1 Подивитися перелік всіх водіїв, видалити (Display All Drivers) 
-       та додати нового (Create new Driver)
-   1.2 Подивитися перелік всіх автомобілів, видалити (Display All Cars)
-   та додати новий (Create new Car)
-   1.3 Подивитися перелік всіх виробників автомобілів, видалити (Display All Manufacturers)
-   та додати нового (Create new Manufacturer)
-   1.4 Закріпити водія за конкретним авто (Add Driver to Car)
-   1.5 Показати аутентифікованому водієві перелік "його" автомобілів (Get My Current Cars)
-Вихід з програми: logout
+Exit from the program: logout
